@@ -2,7 +2,8 @@
 
 ###### Break Inside Bar fully automated trading cBot written for cTrader.
 
-This is one of my first bots ever written and my approach to the popular *‘Inside Bar Candle Pattern’* strategy. The strategy idea considers inside bar formation as a moment of market indecision or consolidation. This might make it a relatively good entry point. The pattern consists of 2 bars where the second bar is smaller than the high-low range of the previous bar (regardless of its relative position). The signals are said to be mostly accurate on the H4 and Daily timeframes.
+This is one of my first bots ever written and my approach to the popular *‘Inside Bar Candle Pattern’* strategy. 
+The idea considers the *inside bar* formation a moment of market indecision or consolidation. This makes it a relatively good entry point. The pattern consists of 2 bars where the second bar is smaller than the high-low range of the previous bar (regardless of its relative position). The signals are said to be mostly accurate on the H4 and Daily timeframes.
 
 ![dgys4FtIV7](https://user-images.githubusercontent.com/88622607/138585376-f9296981-ac19-4c55-8625-6cddf3669929.gif)
 
