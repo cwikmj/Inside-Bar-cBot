@@ -16,6 +16,6 @@ Additionally, I used **Least-Squares Moving Average *(LSMA)*** for signal filter
 ![break-stats](https://user-images.githubusercontent.com/88622607/138585384-16b925a6-9155-4903-8cb1-867b5d77b1e3.JPG)
 
 
-After my tests, I find the strategy accurate in around 60-70% of cases *(backtested in a 10-year-old period on a few currency pairs)*. This is mostly due to a *‘false breakouts’*. It happens when the price initially breaks out beyond the *‘mother candle’* and quickly reverses after it (filling the pending order and then hitting the SL).
+After my tests, I find the strategy accurate in around 60-70% of cases *(backtested in a 10-year-old period on a few currency pairs)*. This is mostly due to *‘false breakouts’*. They occur when the price initially breaks out beyond the *‘mother candle’* and quickly reverses after it (filling the pending order and then hitting the SL). The above picture drawdown is relatively high (>30%) since I used 1 LOT per position, which is quite risky. Reducing it a little will improve the general statistics.
 
-The project could still have decreased the drawdown afte some adjustments. Possible to be updated in the future.
+The project could still have some room for improvement after some adjustments. Possible to be updated in the future.
