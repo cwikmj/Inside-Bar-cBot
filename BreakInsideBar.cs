@@ -48,7 +48,7 @@ namespace cAlgo
             var childLow = Bars.LowPrices.Last(1);
             var childOpen = Bars.OpenPrices.Last(1);
             var childClose = Bars.ClosePrices.Last(1);
-            if (PendingOrders.Count == 0 && !IsPositionOpenByType(TradeType.Buy) && !IsPositionOpenByType(TradeType.Sell))
+            if (PendingOrders.Count == 0)
             {
                 // body size at least 50% of the whole candle
                 if ((Math.Abs(motherClose - motherOpen) / Math.Abs(motherHigh - motherClose)) > 0.5 && (Math.Abs(childClose - childOpen) / Math.Abs(childHigh - childLow)) > 0.5)
@@ -124,7 +124,7 @@ namespace cAlgo
             {
                 var buyPositions = Positions.FindAll("InsideBar", SymbolName, TradeType.Buy);
                 foreach (Position position in buyPositions)
-                    if (position.StopLoss != null && position.Pips > 20)
+                    if (position.StopLoss != null && position.Pips > 16)
                     {
                         double distance = Symbol.Bid - position.EntryPrice;
                         double newBuyTP = Math.Round(5 * GetAverageATR() * Symbol.PipSize, Symbol.Digits);
@@ -140,7 +140,7 @@ namespace cAlgo
             {
                 var sellPositions = Positions.FindAll("InsideBar", SymbolName, TradeType.Sell);
                 foreach (Position position in sellPositions)
-                    if (position.StopLoss != null && position.Pips > 20)
+                    if (position.StopLoss != null && position.Pips > 16)
                     {
                         double distance = position.EntryPrice - Symbol.Bid;
                         double newSellTP = Math.Round(5 * GetAverageATR() * Symbol.PipSize, Symbol.Digits);
