@@ -1,0 +1,6 @@
+//////////////////////////////////
+//// Inside Bar OnChart Drawing
+//////////////////////////////////
+
+This indicator is to help see the Inside Bar formation while using the cBot from this project.
+The indicator marks the Mother Bar with 2 white dots (one above and one below).
